@@ -3,7 +3,14 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
+# ci trigger default is enabled if not explict define. 
+# trigger: none to disable.
+# explict setup
+# trigger:
+# - master
+
+# PR trigger
+pr:
 - master
 
 pool:
